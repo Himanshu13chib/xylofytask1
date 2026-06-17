@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="0; url=QUICK_START.html">
-    <title>SmartPrice AI - Redirecting...</title>
+    <title>SmartPrice AI - Real Estate Analytics</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,17 +18,59 @@
         }
         .container {
             text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
         }
-        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-        p { font-size: 1.2rem; }
-        a { color: #fff; text-decoration: underline; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; animation: fadeIn 0.5s; }
+        p { font-size: 1.3rem; margin: 1rem 0; }
+        a { 
+            color: #fff; 
+            background: rgba(255,255,255,0.2);
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .spinner {
+            margin: 20px auto;
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
+    <script>
+        // Auto-redirect after 1 second
+        setTimeout(function() {
+            window.location.href = 'QUICK_START.html';
+        }, 1000);
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>🏠 SmartPrice AI</h1>
-        <p>Redirecting to application...</p>
-        <p>If not redirected, <a href="QUICK_START.html">click here</a></p>
+        <div class="spinner"></div>
+        <p>Loading Real Estate Analytics Platform...</p>
+        <p style="font-size: 0.9rem; opacity: 0.8;">If not redirected automatically</p>
+        <a href="QUICK_START.html">Click Here to Launch App</a>
     </div>
 </body>
 </html>
